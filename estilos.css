@@ -1,0 +1,164 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.clear { clear: both; }
+.container {
+	display: grid;
+	grid-template-columns: 450px auto 450px;
+	grid-template-rows: auto auto auto;
+  }
+  body {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin: 0;
+	text-align: center  
+  }
+header {
+	background-color: #fff;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	color: black
+  }
+  footer {
+	background-color: #fff;
+	grid-column-start: 1;
+	grid-column-end: 4;
+  }
+  article {
+	background-color: #fff;
+	grid-column: 3;
+	grid-row: 2;
+  }
+  
+  aside {
+	background-color: #fff;
+	/* pode-se indicar a coluna e linha da grid */
+	grid-column: 1;
+	grid-row: 2;
+  }
+.tudo {
+	/*width: 100%;
+	max-width: 960px;*/
+	margin: 0 auto;
+	background: #fff;
+	}	
+.topo {
+	width:100%;
+	line-height: 1;
+	padding: 1px 20px 10px 20px;
+	}
+.topo h1  {
+	font-size: 36px;
+	margin: 4px 0 2px 0;
+	text-align: right;
+	}
+.topo a  {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	}
+.topo h2 {
+	font-size: 20px;
+	margin: 2px 0 4px 0;
+	text-align: right;
+	}
+nav > ul {
+	margin: 5px 0 0 0;
+	padding: 0;
+	width: 100%;
+	background: rgba(5, 80, 5, 0.678); 
+}
+nav { 
+	border-top: 1px solid rgb(0, 0, 0); /*bordinha*/
+	width: 100%;
+	width: calc(100% + 40px);
+	margin-left: -20px;
+}
+.topo ul li {
+	list-style: none;
+	display: inline;
+	}
+.topo ul li a {
+	float: right;
+	text-decoration: none;	
+	text-align: center;
+	border-right: 1px solid #fff;	
+	padding: 10px 20px;
+	color: #fff;
+	background: rgba(5, 80, 5, 0.678);	
+	font-size: 14px;
+	font-weight: bold;
+	}
+	table {
+		border-collapse: collapse;
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	  
+	th, td {
+		padding: 10px
+	}
+	  
+	thead tr {
+		border-bottom: solid 3px rgba(5, 80, 5, 0.678)
+	}
+	  
+	tbody tr:hover{
+		background-color: whitesmoke
+	}
+	tfoot {
+		background-color: rgba(5, 80, 5, 0.678);
+		color: #fff;
+		font-weight: bold;
+		font-style: italic;
+	}
+	article, p{
+		text-align: left
+	}
+	header {
+		text-align: center
+	}
+	form {
+		text-align: left
+	}
+.topo ul li:last-child a { border: none; }
+.topo ul li a:hover, .home .corrente {
+	color: rgba(5, 80, 5, 0.678);
+	background: whitesmoke;
+	}
+	.rlogo{
+		position: absolute;
+		left:0%;
+		top: 15px;
+	}
+	img#menor{
+		display: none;
+	  }
+	  @media screen and (max-width: 480px){
+		  img#p{
+			  display: none;
+		  }
+		  img#menor{
+			  display: inline;
+		  }
+		  .frame{
+			  display: none;
+		  }
+	  }
+.k{
+	text-align: center
+}
+h1{
+	text-align: center
+}
+p{
+	text-align: center
+}
+.ssss{
+	text-align: left
+}
+.frame{
+	text-align: center;
+	position: static
+}
